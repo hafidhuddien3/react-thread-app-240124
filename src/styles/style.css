@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --accent-color: #f6d365;
+
+  --foreground-color: #0F1419;
+  --background-color: white;
+  --gray-dark-color: #66757F;
+  --gray-light-color: #edeff1;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+}
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.loading {
+  position: sticky;
+  top: 0;
+}
+
+.login-page, .register-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+.login-page__hero, .register-page__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 160px;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+.login-page__main, .register-page__main {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 64px;
+}
+
+.login-page__main h2, .register-page h2 {
+  font-weight: 300;
+  font-size: 48px;
+}
+
+.login-input input, .register-input input {
+  display: block;
+  width: 100%;
+  padding: 12px 8px;
+  margin: 8px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--gray-dark-color);
+}
+
+.login-input button, .register-input button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  border: 0;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.home-page {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navigation {
+  padding: 6px;
+  min-height: 55px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 0 12px;
+
+  border-radius: 0 0 10px 10px;
+
+  /* fallback for old browsers */
+  background: #f6d365;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5));
+
+  
+}
+
+.navigation img {
+  width: 32px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.navigation nav {
+  flex: 1;
+}
+
+.navigation nav a {
+  text-decoration: none;
+  color: var(--foreground-color);
+  font-weight: bold;
+}
+
+.navigation button {
+  border: 0;
+  background-color: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.detail-page {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.detail-page__parent {
+  margin-bottom: 64px;
+}
+
+.detail-page__parent h3 {
+  margin: 8px 0 16px 0;
+}
+
+/**/
+main img {
+  
+  vertical-align: middle;
+  border-radius: 50px;
+}
+
+.thread-item ,.leaderboard-item, .thread-detail, .comment-item, .comment-input button{
+  margin: 20px 0;  
+}
+
+.thread-item , .comment-input button, main button{
+cursor: pointer;
+}
+
+.thread-input{
+  display: flex;
+flex-direction: column;
+max-width: 700px;
+}
+
+input,textarea{
+  min-height: 40px;
+  margin: 1px 0;
+
+  font-family: Raleway, sans-serif;
+  
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  outline: none;
+
+  
+
+}
+
+.comment-input textarea{
+  width: 70%;
+}
+
+.categorySearch-input{
+  text-align: center;
+}
+
+.thread-item-header, .leaderboard-item-header, .thread-detail-header, .comment-item-header{
+margin-bottom: 5px;
+  display: flex;
+  gap: 10px;
+
+  padding: 10px;
+  border-radius: 10px;
+
+    /* fallback for old browsers */
+    background: #f6d365;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5));
+}
+
+.leaderboard-item__detail{
+  margin-left: auto;
+  align-self: center;
+}
+
+.leaderboard-item{
+  display: block;
+  font-size: 90%;
+}
+
+main button{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.thread-detail-buttons, .thread-detail-buttons, .char-left{
+  display: flex;
+  gap: 10px;
+}
+
+.thread-input__char-left{
+  align-self: self-end;
+}
+
+.login-input button, .register-input button{
+  background-color: #f6bb65;
+}
+
+.p-title{
+  font-size: 30%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login-page h1, .register-page h1{
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.login-page__hero, .register-page__hero{
+display: block;
+text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .leaderboard-item{
+    display: flex;
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .login-page, .register-page {
+    grid-template-columns: 1.25fr 1fr;
+  }
+
+  .two-input{
+  display: flex;
+  gap: 10px;
+margin: 0 50px;  
+}
+
+  input,textarea{
+    width:300px;
+  }
+
+  .leaderboard-item{
+    display: block;
+  }
+}
