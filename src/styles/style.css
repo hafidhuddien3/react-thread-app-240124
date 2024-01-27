@@ -242,8 +242,9 @@ main button{
 }
 
 .p-title{
-  font-size: 30%;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40%;
+  font-weight: 550;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .login-page h1, .register-page h1{
