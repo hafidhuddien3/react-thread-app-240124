@@ -12,7 +12,6 @@ const store = configureStore({
     authUser: authUserReducer,
     isPreload: isPreloadReducer,
     users: usersReducer,
-    threads: threadsReducer,
     threadDetail: threadDetailReducer,
     loadingBar: loadingBarReducer,
     leaderboard: leaderboardReducer,
