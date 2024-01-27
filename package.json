@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "test": "vitest",
     "e2e": "cypress run",
-    "ci:test": "vitest --no-watch && start-server-and-test dev http-get://0.0.0.0:3000 e2e"
+    "ci:test": "vitest --no-watch && start-server-and-test dev http://localhost:3000 e2e"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
