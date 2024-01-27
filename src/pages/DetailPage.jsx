@@ -10,11 +10,12 @@ import {
   asyncDownVoteThread,
   asyncNeutralizeThreadVote,
 
+  asyncAddComment,
+
   asyncUpVoteComment,
   asyncDownVoteComment,
   asyncNeutralizeCommentVote,
 } from '../states/threadDetail/action';
-import { asyncAddComment } from '../states/comments/action';
 
 function DetailPage() {
   const { id } = useParams();

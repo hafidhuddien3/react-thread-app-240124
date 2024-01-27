@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
 
 function CommentInput({ addComment }) {
   const [text, setText] = useState('');
-  const navigate = useNavigate('/');
 
   function replyCommentHandler() {
     if (text.trim()) {
       addComment(text);
       setText('');
-      navigate('/');
     }
   }
 
