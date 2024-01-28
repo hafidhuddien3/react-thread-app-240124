@@ -3,6 +3,7 @@ import { GoCommentDiscussion } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import LoginInput from '../components/LoginInput';
+import GuestAccount from '../components/GuestAccount';
 import { asyncSetAuthUser } from '../states/authUser/action';
 
 function LoginPage() {
@@ -26,6 +27,7 @@ function LoginPage() {
           {' '}
           <Link to="/register">Register</Link>
         </p>
+        <GuestAccount login={onLogin} />
       </article>
     </section>
   );

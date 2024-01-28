@@ -69,7 +69,7 @@ body {
   border: 1px solid var(--gray-dark-color);
 }
 
-.login-input button, .register-input button {
+.login-page button, .register-input button {
   margin-top: 12px;
   width: 100%;
   padding: 12px 8px;
@@ -237,7 +237,7 @@ main button{
   align-self: self-end;
 }
 
-.login-input button, .register-input button{
+.register-input button, .login-page button{
   background-color: #f6bb65;
 }
 
