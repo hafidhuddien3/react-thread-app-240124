@@ -72,6 +72,7 @@ function DetailPage() {
   return (
     <section className="detail-page">
       <ThreadDetail
+        className="thread-detail-component"
         {...threadDetail}
         authUser={authUser.id}
         UpVoteThread={onasyncUpVoteThread}
